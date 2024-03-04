@@ -1,0 +1,101 @@
+:root {
+  --btn-font: #883ae1;
+  --btn-background: #e6d6fc;
+  --text-color: #6c727f;
+  --tittle-color: #20293a;
+  --background-color: #fafaf9;
+  --background-card-color: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Card Styles */
+
+.card-container {
+  max-width: 375px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin: 1rem;
+  background-color: var(--background-card-color);
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.card-body {
+  padding: 0 1rem;
+}
+
+.card-btn {
+  font-family: "Sora", sans-serif;
+  background-color: var(--btn-background);
+  border-radius: 20px;
+  color: var(--btn-font);
+  padding: 0.25rem 1rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-btn:hover {
+  background-color: var(--btn-font);
+  color: var(--background-card-color);
+}
+
+.card-title {
+  font-size: 1.125rem;
+  color: var(--tittle-color);
+  margin: 1rem 0;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+}
+
+hr {
+  left: 0;
+  border: none;
+
+  height: 3px;
+  background-color: var(--background-color);
+}
+
+.card-footer {
+  padding: 1rem;
+}
+
+.card-author {
+  font-size: 0.625rem;
+}
